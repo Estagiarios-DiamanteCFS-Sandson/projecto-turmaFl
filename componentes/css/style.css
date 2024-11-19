@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.satisfy-regular {
+    font-family: "Satisfy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  @font-face{
+    font-size: "Satisfy", serif;
+    src: url(../fonts/Satisfy/Satisfy-Regular.ttf);
+  }
+  
+  :root {
+    --bs-fontfirst--fontfamily: "Poppins";
+    --bs-fontsecond--fontfamily: "Satisfy";
+    --bs-color: #ffb03b;
+  }
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:"Poppins"; 
+}
+
+div.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+div h1.logo{
+    font-family: "Satisfy", serif;
+    color: var(--bs-color);
+    font-size: 3.4rem;
+}
+
+  div.card{
+    border: none!important;
+    width: 50%;
+    height: 75vh!important;
+    box-shadow: 0px 0px 7px -1px black;
+
+  }
+
+  form h3{
+    text-align: center;
+    margin: 5px;
+   
+}
+
+  form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+  }
+
+  form div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    
+  }
+
+  form div input{
+    border: 2px solid #ffb03b!important;
+  }
+
+  form div label{
+    color: #ffb03b;
+    font-size: 15px;
+    font-weight: bold;
+
+  }
+    
+  form div.col-12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  form div #cadastrar{
+
+    color: #ffffff;
+    background-color: var(--bs-color);
+    width: 60%;
+
+  }
