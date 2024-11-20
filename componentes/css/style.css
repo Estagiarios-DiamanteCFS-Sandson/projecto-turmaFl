@@ -47,7 +47,7 @@ div h1.logo{
 
   div.card{
     border: none!important;
-    width: 50%;
+    width: 40%;
     height: 72vh!important;
     box-shadow: 0px 0px 7px -1px black;
 
@@ -63,7 +63,7 @@ div h1.logo{
 
   div.aut{
     border: none!important;
-    width: 68%;
+    width: 50%;
     height: 40vh!important;
     box-shadow: 0px 0px 7px -1px black;
   }
