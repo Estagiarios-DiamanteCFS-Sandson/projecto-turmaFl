@@ -92,10 +92,10 @@ div h1.logo{
 
   }
 
-  form div #cadastrar{
-
+  form div #cadastrar, #login{
     color: #ffffff;
     background-color: var(--bs-color);
     width: 60%;
 
   }
+
