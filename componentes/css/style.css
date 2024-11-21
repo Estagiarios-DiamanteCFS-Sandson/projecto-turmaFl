@@ -135,3 +135,10 @@ div h1.logo{
     align-items: center;
     justify-content: center;
   }
+
+  header div button{
+    float: right;
+    background-color: #ffb03b!important;
+    border: none!important;
+    color: #ffffff;
+  }
