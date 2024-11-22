@@ -28,6 +28,8 @@ body{
     justify-content: center;
     align-items: center;
     font-family:"Poppins";
+    margin: 0px;
+    padding: 0px;
 }
 
 div.main{
@@ -44,6 +46,31 @@ div h1.logo{
     color: var(--bs-color);
     font-size: 3.4rem;
 }
+
+.log{
+  position: relative;
+  top: 10px;
+  right: 10px;
+  font-family: "Satisfy", serif;
+  color: var(--bs-color);
+  font-size: 2.5rem;
+}
+
+  .hmb {
+    position: relative; 
+    top: 0px;
+    right: 25px;
+    font-size: 24px;
+    padding: 15px; 
+    width: 60px; 
+    height: 60px; 
+    border: none; 
+    border-radius: 50%; 
+    color: white; 
+    display: flex; 
+    justify-content: center;
+    cursor: pointer;
+  }
 
   div.card{
     border: none!important;
@@ -136,9 +163,17 @@ div h1.logo{
     justify-content: center;
   }
 
+
   header div button{
-    float: right;
+    position: relative;
+    left: 70%;
     background-color: #ffb03b!important;
     border: none!important;
     color: #ffffff;
   }
+  
+  nav#sidebar{
+    background-color: #ffb03b!important;
+
+  }
+  
