@@ -7,34 +7,36 @@
     <link rel="stylesheet" href="..\componentes\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\componentes\css\style.css">
     <link rel="stylesheet" href="..\componentes\css\icons\bootstrap-icons.min.css">
+    <link rel="stylesheet" href="..\componentes\css\layout.css">
 </head>
 <body>
-    <div class="container-fluid">
-        <div class="row">
-          <nav class="col-4 bg-dark text-white vh-100 m-0" id="sidebar">
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <button type="button" class="btn hmb"><i class="bi bi-list"></i></button>
-                <h2 class="text-white log">Delicius</h2>
-            </div>
-            <ul class="nav flex-column">
-                <li class="nav-item ">
-                  <a class="nav-link text-white" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#"><i class="bi bi-people-fill"></i> Usuários</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white" href="#"><i class="bi bi-menu-up"></i> Cardápio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#"><i class="bi bi-calendar-check-fill"></i> Reservas</a>
-                </li>
-                <li class="nav-item ">
-                  <a class="nav-link text-white"><i class="bi bi-box-arrow-right"></i> Sair</a>
-                </li>
-              </ul>
-          </nav>
-          <div class="col-8">
+        <div class="layout">
+          <div class="sidebar">
+            <nav class=" text-white vh-100" id="sidebar">
+              <div class="d-flex justify-content-between align-items-center mb-4">
+                  <button type="button" class="btn hmb"><i class="bi bi-list"></i></button>
+                  <h2 class="text-white log">Delicius</h2>
+              </div>
+              <ul class="nav flex-column">
+                  <li class="nav-item ">
+                    <a class="nav-link text-white" aria-current="page" href="#"><i class="bi bi-house-door-fill"></i> Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-people-fill"></i> Usuários</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#"><i class="bi bi-menu-up"></i> Cardápio</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link text-white" href="#"><i class="bi bi-calendar-check-fill"></i> Reservas</a>
+                  </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-white"><i class="bi bi-box-arrow-right"></i> Sair</a>
+                  </li>
+                </ul>
+            </nav>
+          </div>
+          <div class="">
                 <header class="shadow p-3 bg-body-tertiary rounded w-100">
                     <div class="dropdown">
                         <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,21 +51,21 @@
                       </div>
                 </header>
             <main class="d-flex p-4">
-                <div class="card m-2" style="width: 18rem;">
+                <div class="card m-2 home-card" style="width: 18rem;">
                     <div class="card-body">
                         <i class="bi bi-people-fill"></i>
                         <p class="card-text">Usuários</p>
                         <p>10 Total</p>
                     </div>
                   </div>
-                  <div class="card m-2" style="width: 18rem;">
+                  <div class="card m-2 home-card" style="width: 18rem;">
                     <div class="card-body">
                          <i class="bi bi-menu-up"></i>
                          <p class="card-text">Cardápios</p>
                          <p>10 Total</p>
                     </div>
                   </div>
-                  <div class="card m-2" style="width: 18rem;">
+                  <div class="card m-2 home-card" style="width: 18rem;">
                     <div class="card-body">
                         <i class="bi bi bi-calendar-check-fill"></i>
                         <p class="card-text">Reservas</p>
@@ -73,7 +75,6 @@
             </main>
           </div>
         </div>
-      </div>
       
 
     <script src="componentes/js/bootstrap.min.js"></script>

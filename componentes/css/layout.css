@@ -1,0 +1,9 @@
+div.layout{
+    display: flex;
+    flex-direction: row;
+}
+
+div.sidebar{
+    width: 40%;
+    height: auto;
+}
