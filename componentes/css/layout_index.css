@@ -94,7 +94,7 @@ section div.container{
 main div.card {
     box-shadow: 2px 2px 5px -4px black;
     padding: 10px 8px;
-    height: 150px;
+    height: 130px;
     box-sizing: border-box; 
   }
 
@@ -109,7 +109,7 @@ div.card-body p{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  
+  margin-bottom: 0%;  
 }
 
 @media (max-width: 768px) {
