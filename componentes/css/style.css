@@ -132,11 +132,6 @@ div h1.logo{
     align-items: center;
     justify-content: center;
   }
-
-  div.home-card{
-    box-shadow: 2px 2px 5px -4px black;
-    height: 20vh!important;
-  }
   
   div.card-body p{
     display: flex;

@@ -23,6 +23,7 @@ header div button{
 
 header div i{
   color: #f48505;
+  font-size: 1.3rem;
 }
 
 header div.container{
@@ -56,9 +57,15 @@ header div.container{
     
 }
 
+main div.card{
+  height: 150px!important;
+  box-shadow: 2px 2px 5px -4px black;
+  padding: 5% 2%;
+}
+
 main div i{
   background-color: #f48505!important;
-  padding: 5%;
+  padding: 5% 8%;
   border-radius: 10%;
   color: #ffffff;
 }
