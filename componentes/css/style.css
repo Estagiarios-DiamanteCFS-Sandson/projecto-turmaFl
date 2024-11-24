@@ -42,7 +42,7 @@ div h1.logo{
     font-size: 3.4rem;
 }
 
-  div.card{
+  div.cad{
     border: none!important;
     width: 40%;
     height: 72vh!important;
@@ -133,18 +133,8 @@ div h1.logo{
     justify-content: center;
   }
 
-
-  header div button{
-    float: right;
-    background-color: #f48505!important;
-    border: none!important;
-    height: auto;
-    color: #ffffff;
-  }
-
   div.home-card{
-    border: none!important;
-    width: 40%;
+    box-shadow: 2px 2px 5px -4px black;
     height: 20vh!important;
   }
   
