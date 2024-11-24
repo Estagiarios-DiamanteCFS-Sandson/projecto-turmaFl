@@ -11,11 +11,6 @@
     font-weight: 400;
     font-style: normal;
   }
-
-  @font-face{
-    font-size: "Satisfy", serif;
-    src: url(../fonts/Satisfy/Satisfy-Regular.ttf);
-  }
   
   :root {
     --bs-fontfirst--fontfamily: "Poppins";
@@ -23,15 +18,8 @@
     --bs-color: #ffb03b;
   }
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
 body{
-    box-sizing: border-box;
-    display: flex;
+  display: flex;
     height: 100vh;
     font-family:"Poppins";
     margin: 0px;
@@ -53,32 +41,6 @@ div h1.logo{
     color: var(--bs-color);
     font-size: 3.4rem;
 }
-
-.log{
-  position: relative;
-  top: 10px;
-  right: 10px;
-  font-family: "Satisfy", serif;
-  color: var(--bs-color);
-  font-size: 2.5rem;
-
-}
-
-  .hmb {
-    position: relative; 
-    top: 0px;
-    right: 7%;
-    font-size: 24px;
-    padding: 15px; 
-    width: 60px; 
-    height: 60px; 
-    border: none; 
-    border-radius: 50%; 
-    color: white; 
-    display: flex; 
-    justify-content: center;
-    cursor: pointer;
-  }
 
   div.card{
     border: none!important;
@@ -178,11 +140,6 @@ div h1.logo{
     border: none!important;
     height: auto;
     color: #ffffff;
-  }
-  
-  nav#sidebar{
-    background-color: #f48505!important;
-
   }
 
   div.home-card{
