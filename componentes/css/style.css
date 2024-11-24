@@ -19,12 +19,8 @@
   }
 
 body{
-  display: flex;
-    height: 100vh;
     font-family:"Poppins";
-    margin: 0px;
-    padding: 0px;
-    
+   
 }
 
 div.main{
@@ -132,13 +128,7 @@ div h1.logo{
     align-items: center;
     justify-content: center;
   }
-  
-  div.card-body p{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    
-  }
+
 
 
   
