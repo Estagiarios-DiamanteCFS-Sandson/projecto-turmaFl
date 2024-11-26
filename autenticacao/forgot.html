@@ -8,29 +8,30 @@
     <link rel="stylesheet" href="..\componentes\css\bootstrap.min.css">
     <link rel="stylesheet" href="..\componentes\css\icons\bootstrap-icons.min.css">
      <!--LINK BOOTSTRAP-->
-    <link rel="stylesheet" href="..\componentes\css\style.css">
+    <link rel="stylesheet" href="../componentes/css/styleautentication.css">
 </head>
 <body>
-    <div class="main">
-        
-        <div>
-            <h1 class="logo m-5">Delicius</h1>
+    <div class="container">  
+        <div class="logo">
+            <h1 class="m-4">Delicius</h1>
         </div>
 
-        <div class="card aut login">
-            <form action="">
-                <h3>Esqueceu sua senha ?</h3>
-                <p>Digite seu email para recuperar sua senha.</p>
-
-                <div class="mb-4">
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="nome@gmail.com" required>
-                </div>
-
-                <div class="col-11">
-                    <a href="#"><button type="submit" class="btn" id="autentic">Enviar</button></a>
-                </div>
-            </form>
+        <div class="card forgot">
+            <h2>Esqueceu sua senha?</h2>
+            <div class="card-body">
+                <form action="">
+                    <div class="row">
+                        <span>Digite seu email para recuperar sua senha.</span>
+                        <div class="mb-4">
+                            <label for="email">E-mail</label>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="nome@gmail.com" required>
+                        </div>
+                        <div class="col-12">
+                            <a href="login.html" class="btn">Enviar</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
