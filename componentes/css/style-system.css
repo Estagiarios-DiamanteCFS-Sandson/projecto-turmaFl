@@ -35,7 +35,7 @@
     height: auto;
 }
 
-div button{
+div button, .btn{
   background-color: #f48505!important;
   border: none!important;
   color: #ffffff;
@@ -94,15 +94,21 @@ main div#user{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 5%;
 }
+
+
 
 main table tr.cabecalho{
   box-shadow: 2px 2px 5px -2px black!important;
 }
 
 main table tr{
-  box-shadow: 1px 2px 5px -4px black!important;
+  box-shadow: 1px 2px 5px -3px black!important;
   height: 12vh; 
 }
 
+table tr td button{
+  margin: 2%;
+}
 
