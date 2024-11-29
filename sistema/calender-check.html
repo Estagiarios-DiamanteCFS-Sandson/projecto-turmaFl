@@ -77,10 +77,62 @@
                 <h2>Reservas</h2>
             </div>
             <div class="g-col-6">
-                <button type="button" class="btn">+ Adicionar</button>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                  + Adicionar
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastro de Reservas</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row linha">
+                          <h6>Informações Pessoais</h6>
+                          <div class="col-6">
+                              <label for="name">Nome Completo</label>
+                              <input type="email" name="name" id="name" class="form-control">
+                          </div>
+
+                          <div class="col-6">
+                              <label for="email">Email</label>
+                              <input type="text" name="email" id="email" class="form-control">
+                          </div>
+
+                          <div class="col-6">
+                            <label for="dta">Dta</label>
+                            <input type="date" name="dta" id="dta" class="form-control">
+                          </div>
+
+                          <div class="col-6">
+                            <label for="tempo">Tempo</label>
+                            <input type="time" name="tempo" id="tempo" class="form-control">
+                          </div>
+
+                          <div class="col-6">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" name="telefone" id="telefone" class="form-control">
+                          </div>
+
+                          <div class="col-12">
+                              <label for="mensagem">Mensagem</label>
+                              <textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+                          </div>
+                      </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
             </div>
-          </div>
-        <table class="">
+        </div>
+        <table class="table table-hover">
             <thead>
               <tr class="cabecalho">
                 <th scope="col">Nome</th>
@@ -152,7 +204,7 @@
                 </td>                 
               </tr>             
             </tbody>
-          </table>
+        </table>
     </main>
 
     <!--link JAVASCRIPT-->

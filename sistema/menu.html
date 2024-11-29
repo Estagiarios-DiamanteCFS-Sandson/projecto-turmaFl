@@ -76,11 +76,51 @@
             <div class="g-col-6">
                 <h2>Cardápio</h2>
             </div>
-            <div class="g-col-6">
-                <button type="button" class="btn">+ Adicionar</button>
+            <div class="g-col-6 mdl">
+                 <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    + Adicionar
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Cadastrar Usuários</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="imagem" id="imagem">
+                                <input type="image" src="" alt="">
+                                <i class="bi bi-cloud-upload"></i>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6">
+                                    <label for="name">Nome</label>
+                                    <input type="text" name="name" id="name" class="form-control">
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="preco">Preço</label>
+                                    <input type="text" name="preco" id="preco" class="form-control">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="descricao">Descrição</label>
+                                    <textarea name="descricao" id="descricao" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-primary">Guardar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
             </div>
           </div>
-        <table class="">
+        <table class="table table-hover">
             <thead>
               <tr class="cabecalho">
                 <th scope="col">Nome</th>
@@ -98,7 +138,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
@@ -108,7 +148,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                
               </tr>
               <tr>
@@ -118,7 +158,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
@@ -128,7 +168,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
@@ -138,7 +178,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
@@ -148,7 +188,7 @@
                 <td>01/03/2024</td>
                 <td>
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
-                    <button type="button" class="btn"><i class="bi bi-trash-fill"></i></button>
+                    <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>             
             </tbody>

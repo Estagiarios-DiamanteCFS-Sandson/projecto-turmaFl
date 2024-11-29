@@ -99,7 +99,7 @@ main div#user{
 
 
 
-main table tr.cabecalho{
+/*main table tr.cabecalho{
   box-shadow: 2px 2px 5px -2px black!important;
 }
 
@@ -110,5 +110,54 @@ main table tr{
 
 table tr td button{
   margin: 2%;
+}
+*/
+
+main div#imagem{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bs-color);
+  font-size: 3rem;
+  border: 2px dashed var(--bs-color);
+  height: 40vh!important;
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+
+main div#img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--bs-color);
+  font-size: 3rem;
+  border: 2px dashed var(--bs-color);
+  height: 30vh!important;
+  width: 30%;
+  border-radius: 20px;
+  margin-bottom: 5%;
+}
+
+main div.modal-body div.linha{
+  background-color: #ffa60088;
+  padding: 5% 0;
+  text-align: start;
+}
+
+main div .form-control{
+    border-color: var(--bs-color)!important;
+    border: 2px solid;
+}
+
+table.table.table-hover{
+  border-collapse: separate!important;
+  border-spacing: 0 5px!important;
+  font-size: 14px;
+  border-color: transparent;
+}
+
+thead, tr{
+  box-shadow: 2px 2px 8px -6px !important;
 }
 
