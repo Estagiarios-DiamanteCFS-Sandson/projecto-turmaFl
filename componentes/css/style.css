@@ -32,6 +32,7 @@
 .header{
     grid-area: header;
     box-shadow: 0px 2px 5px -4px black!important;
+    width: 100%;
     height: auto;
 }
 
@@ -61,7 +62,7 @@ header div.container{
     width: 250px;
 }
 
-section div.container{
+aside div.container{
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
