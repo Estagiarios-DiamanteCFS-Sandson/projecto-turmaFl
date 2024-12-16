@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.satisfy-regular {
+  font-family: "Satisfy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --bs-fontfirst--fontfamily: "Poppins";
+  --bs-fontsecond--fontfamily: "Satisfy";
+  --bs-color: #ffb03b;
+}
+ body{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-areas: 
+    "side header"
+    "side main";
+}
+
+.header{
+    grid-area: header;
+    box-shadow: 0px 2px 5px -4px black!important;
+    width: 100%;
+    height: auto;
+}
+
+header div button{
+  background-color: #f48505!important;
+  border: none!important;
+  color: #ffffff;
+}
+
+header div i{
+  color: #f48505;
+  font-size: 1.3rem;
+}
+
+header div.container{
+  float: right;  
+}
+
+.sidebar{
+    background-color: #f48505;
+    grid-area: side;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 250px;
+}
+
+aside div.container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 3% 0%;
+
+}
+
+.log{
+  font-family: "Satisfy", serif;
+  font-size: 2.5rem;
+  padding: 8%;
+  
+}
+  
+.hmb {
+    font-size: 1.5rem;
+    border: none; 
+    color: white; 
+    cursor: pointer;
+}
+
+.mainn{
+    padding: 35px;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+main div.card {
+    box-shadow: 2px 2px 5px -4px black;
+    padding: 10px 8px;
+    height: 130px;
+    box-sizing: border-box; 
+  }
+
+main div i{
+  background-color: #f48505!important;
+  padding: 5% 8%;
+  border-radius: 10%;
+  color: #ffffff;
+}
+
+div.card-body p{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 0%;  
+}
+
+@media (max-width: 768px) {
+  .mainn {
+      grid-template-columns: 1fr;
+  }
+}
