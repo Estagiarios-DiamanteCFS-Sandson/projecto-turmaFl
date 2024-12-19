@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Link CSS-->
-    <link rel="stylesheet" href="componentes/css/sistema.css">
+    <link rel="stylesheet" href="componentes/css/style-site.css">
     <!--LINK BOOTSTRAP-->
     <link rel="stylesheet" href="componentes\css\bootstrap.min.css">
     <link rel="stylesheet" href="componentes\css\icons\bootstrap-icons.min.css">
@@ -170,7 +170,7 @@
         </section>
 
         <!--seccao do cardapio-->
-        <section class="cardapio" id="cardapio">
+        <section class="cardapio container" id="cardapio">
             <h2 class="logo">Dê uma olhada no <span class="cor">Cardápio</span></h2>
             <div>
                 <!-- Nav tabs -->
@@ -186,10 +186,10 @@
                         <a class="nav-link text-black" data-bs-toggle="tab" href="#menu2">Saladas</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" data-bs-toggle="tab" href="#menu2">Doces</a>
+                            <a class="nav-link text-black" data-bs-toggle="tab" href="#menu3">Doces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-black" data-bs-toggle="tab" href="#menu2">Hamburguers</a>
+                            <a class="nav-link text-black" data-bs-toggle="tab" href="#menu4">Hamburguers</a>
                         </li>
                     </ul>
                 </nav>
@@ -197,7 +197,7 @@
                 <!-- Tab panes -->
                 <div class="tab-content">
                     <div class="tab-pane container active" id="home">
-                        <!--por testar uma ideia-->
+                        <!--Area para todos os pratos e precos-->
                         <div class="row">
                             <div class="col-auto">
                                 <!--items do cardápio -->
@@ -245,8 +245,86 @@
 
                         </div>
                     </div>
-                    <div class="tab-pane container fade" id="menu1">...</div>
-                    <div class="tab-pane container fade" id="menu2">...h</div>
+                    <div class="tab-pane container fade" id="menu1">
+                        <div class="row">
+                            <div class="col-auto">
+                                <!--items do cardápio -->
+                                <div class="menu-item">
+                                </div>
+                                <div class="menu-item">
+                                    <span class="prato">Sopa de Lagosta</span>
+                                    <span class="price">9.955 Kz</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span class="prato">Bolo de caranguejo</span>
+                                    <span class="price">6.950 Kz</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span class="prato">Barril de pao</span>
+                                    <span class="price">4.950 Kz</span>
+                                </div>
+                                <div class="menu-item">
+                                    <span class="prato">Palito De Mussarela</span>
+                                    <span class="price">9.958 Kz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu2">
+                        <div class="menu-item">
+                            <span class="prato">Salada Grega</span>
+                            <span class="price">8.953 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Salada Grega</span>
+                            <span class="price">8.953 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Salada Grega</span>
+                            <span class="price">8.953 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Salada Grega</span>
+                            <span class="price">8.953 Kz</span>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu3">
+                        <div class="menu-item">
+                            <span class="prato">Mousse de Chocolate</span>
+                            <span class="price">4.953 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Mousse de Chocolate</span>
+                            <span class="price">4.953 Kz</span>
+                        </div><div class="menu-item">
+                            <span class="prato">Mousse de Chocolate</span>
+                            <span class="price">4.953 Kz</span>
+                        </div><div class="menu-item">
+                            <span class="prato">Mousse de Chocolate</span>
+                            <span class="price">4.953 Kz</span>
+                        </div><div class="menu-item">
+                            <span class="prato">Mousse de Chocolate</span>
+                            <span class="price">4.953 Kz</span>
+                        </div>
+                    </div>
+                    <div class="tab-pane container fade" id="menu4">
+                        <div class="menu-item">
+                            <span class="prato">Hambúrguer Clássico</span>
+                            <span class="price">8.500 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Hambúrguer Cheddar Bacon</span>
+                            <span class="price">9.500 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Hambúrguer Duplo</span>
+                            <span class="price">12.500 Kz</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="prato">Hambúrguer Veggie</span>
+                            <span class="price">10.500 Kz</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
