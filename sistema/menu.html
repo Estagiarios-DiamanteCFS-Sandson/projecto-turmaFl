@@ -9,6 +9,33 @@
     <link rel="stylesheet" href="..\componentes\css\icons\bootstrap-icons.min.css">
     <!--LINK CSS-->
     <link rel="stylesheet" href="../componentes/css/style-system.css">
+    <style>
+      header{
+          display: flex;
+          justify-content: start !important;
+      }
+
+      header div.image-uploader{
+          height: 30vh;
+          width: 100%;
+          border: 2px dashed #f48505;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          cursor: pointer;
+          position: relative;
+          overflow: hidden;
+          background-color: #ffffff;
+      }
+
+      div.image-uploader img{
+          display: none;
+          max-width: 100%;
+          max-height: 100vh;
+          object-fit: cover;
+      }
+  </style>
 </head>
 <body>
     <header class="header shadow p-2 bg-body-tertiary rounded">
@@ -90,12 +117,15 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <div class="imagem" id="imagem">
-                                <input type="image" src="" alt="">
-                                <i class="bi bi-cloud-upload"></i>
+                          <header>
+                            <div class="image-uploader m-2" id="uploadArea">
+                                <input type="file" name="" id="fileInput" accept="image/*" style="display: none;">
+                                <img src="" alt="Clique para carregar imagem" id="previewImage">
+                                <i class="bi bi-cloud-upload" style="color: blue;" id="icon"></i>
                             </div>
+                        </header>
 
-                            <div class="row">
+                            <div class="row linha m-2">
                                 <div class="col-6">
                                     <label for="name">Nome</label>
                                     <input type="text" name="name" id="name" class="form-control">
@@ -123,70 +153,70 @@
         <table class="table table-hover">
             <thead>
               <tr class="cabecalho">
-                <th scope="col">Nome</th>
-                <th scope="col">Descrição</th>
-                <th scope="col">Preço</th>
-                <th scope="col">Dados de registro</th>
-                <th scope="col" class="action">Acção</th>
+                <th class="p-3 align-middle" scope="col">Nome</th>
+                <th class="p-3 align-middle" scope="col">Descrição</th>
+                <th class="p-3 align-middle" scope="col">Preço</th>
+                <th class="p-3 align-middle" scope="col">Dados de registro</th>
+                <th class="p-3 align-middle" scope="col" class="action">Acção</th>
               </tr>
             </thead>
             <tbody>
                 <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                
               </tr>
               <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
               </tr>
               <tr>
-                <th scope="row">Toscana Grelhada</th>
-                <td>Arroz, batata</td>
-                <td>500 kz</td>
-                <td>01/03/2024</td>
-                <td>
+                <th class="p-2 align-middle" scope="row">Toscana Grelhada</th>
+                <td class="p-2 align-middle">Arroz, batata</td>
+                <td class="p-2 align-middle">500 kz</td>
+                <td class="p-2 align-middle">01/03/2024</td>
+                <td class="p-2 align-middle">
                     <button type="button" class="btn"><i class="bi bi-pencil-fill"></i></button>
                     <button type="button" class="btn"><i class="bi bi-archive-fill"></i></i></button>
                 </td>                 
