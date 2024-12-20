@@ -73,7 +73,7 @@ a{
 
 header.rolagem{
     width: 100%;
-    background-color: rgba(83, 71, 63, 0.854);
+    background-color: rgb(48, 32, 22);
     top: 0;
 }
 
@@ -81,6 +81,28 @@ header.rolagem{
     display: none;
     position: fixed;
     top: -50px !important;   
+}
+
+.carousel-caption {
+    /* Posicionamento e estilo inicial do caption */
+    position: absolute;
+    bottom: 20px;
+    left: 15%;
+    right: 15%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;  /* Começa invisível */
+    transform: translateY(20px);  /* Começa um pouco abaixo da sua posição final */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.carousel-item.active .carousel-caption {
+    /* Captions visíveis quando o carousel-item estiver ativo */
+   opacity: 1;
+   transform: translateY(0);  /* Move para a posição final */
 }
 
 .fotos img {
@@ -104,7 +126,65 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2%;
+    padding: 1%;
+}
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Impede que a animação extrapole o container */
+  }
+  
+  .image {
+    display: block; /* Remove espaço adicional embaixo da imagem */
+    width: 100%; 
+    transition: opacity 0.3s ease; /* Transição para o efeito hover */
+    object-fit: cover;
+  }
+  
+  .play-icon-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o contâiner do ícone */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: rgb(236, 162, 25); /* Círculo amarelo um pouco fusco */
+    display: flex; /* Usar flexbox para centralizar o ícone dentro do círculo */
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+
+.play-icon-outer-circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(214, 157, 52, 0.669); /* Círculo menos carregado */
+    transition: transform 0.3s ease, background-color 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+  
+  .play-icon {
+    font-size: 24px;
+    color: #fff;
+    transition: transform 0.3s ease;
+  }
+  
+  
+  /* Animação Hover */
+  .image-container:hover .image {
+      opacity: 0.7;
+  }
+  
+  .image-container:hover .play-icon{
+    transform: scale(3.5); /* Altera o tamanho do ícone no hover */
 }
 
 section .content, #cardapio{
@@ -134,11 +214,13 @@ div.shadow{
     height: 290px;
 }
 
-.cardapio nav a, ul .btn{
+.cardapio nav a, ul .btn, div.carousel-btn .btn{
     border: 2px solid var(--bs-color) !important;
     border-radius: 40px !important;
     margin: 8px;
     font-size: .8rem !important;
+    color: white;
+    font-weight: 500;
 }
 
 nav a:hover, a.nav-link:hover{
@@ -221,4 +303,42 @@ section#chefs .chef{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+
+.ceo-slide {
+background-image: url('../imagens/testimonials-bg.jpg'); /* Caminho para sua imagem de fundo */
+background-size: cover; /* Cobre todo o espaço disponível */
+background-position: center; /* Centraliza a imagem */
+padding: 20px 10px; /* Espaçamento interno para separar conteúdo do topo/rodapé */
+color: #fff; /* Texto branco para contraste */
+}
+
+.ceo-slide .carousel-item img {
+width: 100px; /* Ajusta o tamanho da imagem circular */
+height: 100px; /* Garante proporções iguais */
+object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+}
+
+.ceo-slide h5 {
+font-size: 1.5rem; /* Tamanho do texto do nome */
+}
+
+.ceo-slide small {
+display: block;
+font-size: 0.9rem; /* Ajusta o subtítulo */
+}
+
+.ceo-slide p {
+font-size: 1rem; /* Ajusta o texto do parágrafo */
+max-width: 600px; /* Limita a largura do texto */
+margin: 0 auto; /* Centraliza o texto */
+}
+
+.ceo-slide .carousel-control-prev-icon,
+.ceo-slide .carousel-control-next-icon {
+background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente para os controles */
+border-radius: 50%; /* Botões arredondados */
+width: 50px;
+height: 50px;
 }

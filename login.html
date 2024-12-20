@@ -1,15 +1,18 @@
+<?php 
+include_once 'acoes/acao_login.php'
+?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt_PT">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <!--LINK BOOTSTRAP-->
-    <link rel="stylesheet" href="..\componentes\css\bootstrap.min.css">
-     <link rel="stylesheet" href="..\componentes\css\icons\bootstrap-icons.min.css">
+    <link rel="stylesheet" href="componentes\css\bootstrap.min.css">
+     <link rel="stylesheet" href="componentes\css\icons\bootstrap-icons.min.css">
     <!--LINK CSS-->
-    <link rel="stylesheet" href="..\componentes\css\stylecss">
-    <link rel="stylesheet" href="../componentes/css/styleautentication.css">
+    <link rel="stylesheet" href="componentes\css\stylecss">
+    <link rel="stylesheet" href="componentes/css/styleautentication.css">
 
 </head>
 <body>
@@ -22,7 +25,7 @@
         <div class="card">
             <h2>Login</h2>
             <div class="card-body">
-                <form action="">
+                <form action="" method="Post" novalidate>
                     <div class="row">
                         <div class="mb-2">
                             <label for="email">E-mail</label>
@@ -44,7 +47,7 @@
                         </div>
 
                         <div class="col-12">
-                            <a href="#" class="btn">Login</a>
+                            <button type="submit" class="btn" id="login" name="btn-login" style="background-color: #ffb03b; color: white;">Login</button>
                         </div>
                         <div>
                             <span>Não tem uma conta? <a href="cadastro.html" class="link"> Crie uma</a></span>
@@ -55,7 +58,7 @@
         </div>
     </div>
 
-    <script src="../componentes/js/bootstrap.min.js"></script>
-    <script src="../componentes/js/script.js"></script>
+    <script src="componentes/js/bootstrap.min.js"></script>
+    <script src="componentes/js/script.js"></script>
 </body>
 </html>

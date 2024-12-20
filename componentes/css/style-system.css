@@ -51,15 +51,50 @@ header div.container{
   float: right;  
 }
 
-.sidebar{
-    background-color: #f48505;
-    grid-area: side;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 250px;
+.sidebar {
+  background-color: #f48505;
+  grid-area: side;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px; /* Largura inicial do sidebar */
+  transition: all 0.2s ease-in-out; /* Transição suave para o efeito */
+  z-index: 100;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+.sidebar.collapsed .log {
+  display: none;
+}
+
+.sidebar .nav-link {
+  display: flex;
+  align-items: center; /* Para centralizar os itens verticalmente */
+  gap: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.sidebar-text {
+  transition: all 0.3s ease-in-out; /* Transição suave para o efeito */
+}
+
+.sidebar.collapsed .sidebar-text {
+  display: none;
+}
+
+.hmb {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px; 
+  cursor: pointer; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 section div.container{
@@ -75,13 +110,6 @@ section div.container{
   font-size: 2.5rem;
   padding: 8%;
   
-}
-  
-.hmb {
-    font-size: 1.5rem;
-    border: none; 
-    color: white; 
-    cursor: pointer;
 }
 
 .mainn{
