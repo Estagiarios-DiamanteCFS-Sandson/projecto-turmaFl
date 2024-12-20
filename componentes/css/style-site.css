@@ -126,7 +126,7 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1%;
+    padding: 2%;
 }
 
 .image-container {
@@ -205,7 +205,6 @@ div#porque .card{
     width: 310px !important;
     height: 340px;
     box-sizing: border-box;
-
 }
 
 div.shadow{
@@ -272,34 +271,36 @@ div .menu-item{
 a img{
     width: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-section#chefs img{
+section#chefes img{
     display: flex;
     justify-content: center;
     object-fit: cover;
     height: 320px;
 }
 
-section#chefs img#dif{
-    height: 320px;
+section#chefes img#dif{
+    height: 300px;
 }
 
-section#chefs .card{
-    width: 85%;
+section#chefes .card{
+    width: 95%;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #716464 !important;
     padding: 4%;
+    border-radius: 0%;
 }
 
-section#chefs .card i{
+section#chefes .card i{
     color: #716464 !important;
     margin: 4px;
 }
 
-section#chefs .chef{
+section#chefes .chef{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -342,3 +343,60 @@ border-radius: 50%; /* Botões arredondados */
 width: 50px;
 height: 50px;
 }
+
+.galeria img:hover {
+transform: scale(1.1);
+}
+
+/* Estilo geral */
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Seção principal */
+.contact-section {
+    width: 100%;
+}
+
+/* Formulário */
+.contact-form {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+  
+}
+
+.contact-form .form-control {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.btn-send {
+    background-color: #ff9900;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-send:hover {
+    background-color: #e68a00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .contact-form {
+        position: static; /* Para evitar problemas em telas menores */
+        margin-top: 20px;
+    }
+}
+
+
+
